@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSky Hub - Cinematic Vault</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <a href="../index.html" class="brand-logo">
+            <i class="fa-solid fa-sparkles"></i>
+            <span>CineSky<b>Hub</b></span>
+        </a>
+        <nav>
+            <a href="../index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="../weather-app/index.html" class="nav-link"><i class="fa-solid fa-cloud-sun"></i> Weather</a>
+            <a href="index.html" class="nav-link active"><i class="fa-solid fa-film"></i> Movies & Series</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-container">
+        <!-- Search Section -->
+        <div class="search-header">
+            <h2><i class="fa-solid fa-clapperboard"></i> Cinematic Vault</h2>
+            <p>Explore blockbusters, web series, top releases, and in-depth metadata.</p>
+            
+            <!-- Search Box with Category Selector -->
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="movie-input" placeholder="Search movies, web series, or franchises (e.g., Stranger Things, Avengers)...">
+                
+                <select id="type-select" class="type-dropdown">
+                    <option value="">All Categories</option>
+                    <option value="movie">Movies Only</option>
+                    <option value="series">Web Series Only</option>
+                </select>
+
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
+
+        <!-- Section Title & Status Message -->
+        <div class="results-header">
+            <h3 id="section-title">Trending Movies & Web Series</h3>
+            <span id="status-message" class="status-message"></span>
+        </div>
+
+        <!-- Movie Cards Grid Container -->
+        <div id="movies-grid" class="movies-grid"></div>
+    </main>
+
+    <!-- Detailed View Modal Popup -->
+    <div id="movie-modal" class="modal hidden">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Dynamic detail contents injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 CineSky Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

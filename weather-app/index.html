@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSky Hub - Atmospheric Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <a href="../index.html" class="brand-logo">
+            <i class="fa-solid fa-sparkles"></i>
+            <span>CineSky<b>Hub</b></span>
+        </a>
+        <nav>
+            <a href="../index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="index.html" class="nav-link active"><i class="fa-solid fa-cloud-sun"></i> Weather</a>
+            <a href="../movie-app/index.html" class="nav-link"><i class="fa-solid fa-film"></i> Movies</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-container">
+        <div class="weather-dashboard">
+            <div class="dash-header">
+                <h2><i class="fa-solid fa-cloud-sun-rain"></i> Atmospheric Radar</h2>
+                <p>Real-time meteorological metrics and forecasts worldwide.</p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="city-input" placeholder="Enter city name (e.g., London, Tokyo, Mysore)...">
+                <button id="search-btn">Search</button>
+            </div>
+
+            <!-- Status / Error Messages -->
+            <div id="status-message" class="status-message">Search a city to view comprehensive weather insights.</div>
+
+            <!-- Weather Details Card (Hidden by default until search) -->
+            <div id="weather-display" class="weather-display hidden">
+                <div class="weather-main-info">
+                    <div class="location-box">
+                        <h3 id="city-title">--</h3>
+                        <span id="country-badge">--</span>
+                    </div>
+                    <div class="temp-display">
+                        <span id="temp-value">--</span><span class="unit">°C</span>
+                    </div>
+                    <div class="condition-box">
+                        <img id="weather-icon" src="" alt="Weather Icon">
+                        <span id="condition-text">--</span>
+                    </div>
+                </div>
+
+                <!-- Comprehensive Data Grid (6 Cards) -->
+                <div class="weather-grid">
+                    <div class="w-card">
+                        <i class="fa-solid fa-temperature-half"></i>
+                        <div>
+                            <span class="label">Feels Like</span>
+                            <span id="feels-like" class="value">--°C</span>
+                        </div>
+                    </div>
+                    <div class="w-card">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div>
+                            <span class="label">Humidity</span>
+                            <span id="humidity" class="value">--%</span>
+                        </div>
+                    </div>
+                    <div class="w-card">
+                        <i class="fa-solid fa-wind"></i>
+                        <div>
+                            <span class="label">Wind Speed</span>
+                            <span id="wind-speed" class="value">-- m/s</span>
+                        </div>
+                    </div>
+                    <div class="w-card">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <div>
+                            <span class="label">Pressure</span>
+                            <span id="pressure" class="value">-- hPa</span>
+                        </div>
+                    </div>
+                    <div class="w-card">
+                        <i class="fa-solid fa-eye"></i>
+                        <div>
+                            <span class="label">Visibility</span>
+                            <span id="visibility" class="value">-- km</span>
+                        </div>
+                    </div>
+                    <div class="w-card">
+                        <i class="fa-solid fa-sun"></i>
+                        <div>
+                            <span class="label">Sunrise / Sunset</span>
+                            <span id="sun-times" class="value">-- / --</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 CineSky Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSky Hub - Weather & Movies Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-sparkles"></i>
+            <span>CineSky<b>Hub</b></span>
+        </div>
+        <nav>
+            <a href="weather-app/index.html"><i class="fa-solid fa-cloud-sun"></i> Weather</a>
+            <a href="movie-app/index.html"><i class="fa-solid fa-film"></i> Movies</a>
+        </nav>
+    </header>
+
+    <!-- Main Hero Container -->
+    <main class="hero-container">
+        <div class="hero-header">
+            <span class="badge"><i class="fa-solid fa-compass"></i> All-In-One Dashboard</span>
+            <h1>Discover Weather & Cinematic Experiences</h1>
+            <p>Access real-time atmospheric conditions and explore detailed movie insights through a single dashboard.</p>
+        </div>
+
+        <!-- App Choice Cards -->
+        <div class="app-grid">
+            <!-- Weather Card -->
+            <div class="app-card weather-card">
+                <div class="card-image-bg weather-bg"></div>
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <div class="icon-badge">
+                        <i class="fa-solid fa-cloud-bolt"></i>
+                    </div>
+                    <h2>Atmospheric Insights</h2>
+                    <p>Live forecasts, humidity, wind dynamics, pressure, and solar timings for any city globally.</p>
+                    <a href="weather-app/index.html" class="btn btn-weather">
+                        <span>Explore Weather</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="app-card movie-card">
+                <div class="card-image-bg movie-bg"></div>
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <div class="icon-badge">
+                        <i class="fa-solid fa-clapperboard"></i>
+                    </div>
+                    <h2>Cinematic Vault</h2>
+                    <p>Discover trending movies, release dates, full cast rosters, directors, and IMDb ratings.</p>
+                    <a href="movie-app/index.html" class="btn btn-movie">
+                        <span>Browse Movies</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 CineSky Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
